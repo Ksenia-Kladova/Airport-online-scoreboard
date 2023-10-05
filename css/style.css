@@ -1,0 +1,611 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Regular'),
+    url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Medium'),
+    url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter SemiBold'),
+    url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter-SemiBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Bold'),
+    url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 24px 10px;
+  min-width: 320px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #064EB4 0%, #1967C9 20.00%, #3D87DE 40.00%, #7CAAE8 60.00%, #B3C2E9 80.00%, #B3C2E9 100%);
+  background-repeat: no-repeat;
+}
+
+:root {
+  --placeholder: #00153E4D;
+  --blue: #005FCB;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img {
+  max-width: 100%;
+}
+
+input {
+  font: inherit;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-reset:focus,
+.btn-reset:focus-visible {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  border-radius: 12px;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+.scoreboard__header {
+  flex-direction: column;
+  padding: 27px 15px 30px 7px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #efF1F5;
+  overflow: hidden;
+}
+
+.scoreboard__header-wrap {
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.scoreboard__title {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.scoreboard__btn-editing {
+  text-align: left;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #b3b9c6;
+  transition: color 0.2s ease-in-out;
+}
+
+.scoreboard__btn-editing:focus,
+.scoreboard__btn-editing:hover,
+.scoreboard__btn-editing:active {
+  color: #000;
+}
+
+.scoreboard__btn-save {
+  margin-bottom: 32px;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  max-width: 278px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  background-color: var(--blue);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.scoreboard__form-btn:focus,
+.scoreboard__btn-save:focus {
+  border: 1px solid #39a230;
+  background-color: #1a9310;
+}
+
+.scoreboard__form-btn:hover,
+.scoreboard__btn-save:hover {
+  border: 1px solid #39a230;
+  background-color: #1a9310;
+}
+
+.scoreboard__form-btn:active,
+.scoreboard__btn-save:active {
+  border: 1px solid #db2525;
+  background-color: #db2525;
+}
+
+.scoreboard__search {
+  padding: 12px 13px 9px 37px;
+  border-radius: 7px;
+  background-color: #fff;
+  background-image: url("../image/magnifying_icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 13px;
+  background-position-y: center;
+}
+
+.scoreboard__search-btn {
+  margin-right: 8px;
+}
+
+.scoreboard__search-input {
+  border: none;
+  width: 100%;
+}
+
+.scoreboard__search-input:focus,
+.scoreboard__search-input:focus-visible {
+  outline: none;
+}
+
+.scoreboard__search-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.75px;
+  color: var(--placeholder);
+}
+
+.scoreboard__wrapper-form {
+  padding-bottom: 31px;
+  padding-left: 10px;
+  background-color: #efF1F5;
+}
+
+.scoreboard__title-form {
+  margin: 0;
+  margin-bottom: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.scoreboard__form-container {
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scoreboard__form-input {
+  padding: 4px 12px 4px;
+  border-radius: 6px;
+  border: 1px solid #b3b9c6;
+  width: 100%;
+  font-size: 12px;
+  line-height: 21.75px;
+}
+
+.scoreboard__form-input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.75px;
+  color: var(--placeholder);
+}
+
+.scoreboard__form-wrapper {
+  flex-direction: column;
+  justify-self: stretch;
+}
+
+.just-validate-error-label {
+  order: -1;
+  margin-top: -12px;
+  font-size: 10px;
+}
+
+.scoreboard__form-input--time {
+  display: inline-block;
+  width: 119px;
+}
+
+.scoreboard__form-input--flight {
+  width: 100%;
+}
+
+.scoreboard__form-wrapper--date {
+  width: 124px;
+}
+
+.scoreboard__form-wrapper--time {
+  width: 119px;
+}
+
+.scoreboard__form-wrapper--direction {
+  width: 201px;
+}
+
+.scoreboard__form-wrapper--flight {
+  width: 160px;
+}
+
+.scoreboard__form-wrapper--aviacompany {
+  width: 157px;
+}
+
+.scoreboard__form-wrapper--status {
+  width: 130px;
+}
+
+.scoreboard__form-wrapper--fromto {
+  width: 123px;
+}
+
+.choices {
+  order: 2;
+  margin: 0;
+  width: 100%;
+}
+
+.choices[data-type*=select-one]::after {
+  right: 14px;
+  top: 40%;
+  border: 1px solid #b3b9c6;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  height: 9px;
+  width: 9px;
+  transform: rotate(-45deg);
+}
+
+.choices[data-type*=select-one].is-open::after {
+  top: 68%;
+  border: 1px solid #b3b9c6;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.choices.is-focused.is-open {
+  z-index: 2;
+}
+
+.choices__inner {
+  padding: 5px 15px 3px 11px;
+  border: 1px solid #b3b9c6;
+  border-radius: 6px;
+  min-height: 32px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--placeholder);
+  background-color: #fff;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 3px;
+}
+
+.is-open .choices__inner {
+  border-color: #b3b9c6;
+  border-radius: 6px;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.is-open .choices__list [data-value="Направление"] {
+  display: none;
+}
+
+.is-open .choices__list [data-value="Авиакомпания"] {
+  display: none;
+}
+
+.is-open .choices__list [data-value="Тип"] {
+  display: none;
+}
+
+.is-open .choices__list [data-value="Статус"] {
+  display: none;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  z-index: -1;
+  padding: 20px 5px 8px 12px;
+  border: 1px solid #b3b9c6;
+  top: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fff;
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  border-color: #b3b9c6;
+}
+
+.choices__list--dropdown .choices__list,
+.choices__list[aria-expanded] .choices__list {
+  overflow: hidden;
+}
+
+.choices__item {
+  padding: 0;
+}
+
+[aria-selected='true'] {
+  color: #000;
+}
+
+.choices__inner [data-id='1'] {
+  color: var(--placeholder);
+}
+
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
+  padding: 0;
+  font-size: 12px;
+  line-height: 21.75px;
+}
+
+.choices__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  color: #1a9310;
+  background-color: #fff;
+}
+
+.choices__list--dropdown .choices__item--selectable::after, .choices__list[aria-expanded] .choices__item--selectable::after {
+  content: '\00AC';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0;
+  transform: translate(30%, -50%) rotate(135deg);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="Прибыл"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="Прибыл"],
+[data-value="Прибыл"] {
+  color: #0B8C00;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-color="blue"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-color="blue"],
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="Посадка"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="Посадка"],
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="В полете"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="В полете"] {
+  color: var(--blue);
+}
+
+[data-color="blue"],
+[data-value="Посадка"],
+[data-value="В полете"] {
+  color: var(--blue);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="Отменен"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="Отменен"],
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="Задерживается"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="Задерживается"],
+[data-value="Отменен"],
+[data-value="Задерживается"] {
+  color: #DB2525;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted[data-value="Регистрация"],
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted[data-value="Регистрация"],
+[data-value="Регистрация"] {
+  color: #000;
+}
+
+.invalid .choices .choices__inner {
+  border: 1px solid rgb(184, 17, 17);
+}
+
+.choices.is-focused .choices__inner {
+  border: 2px solid #000;
+}
+
+.scoreboard__form-btn {
+  padding: 9px 48px;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  background-color: var(--blue);
+  transition: (border-color 0.2 ease-in-out, background-color 0.2 ease-in-out);
+}
+
+.scoreboard__tab {
+  padding: 28px 10px 0px;
+  border-bottom: solid 1px #A8AFBF;
+  background-color: #fff;
+}
+
+.scoreboard__btn-out {
+  margin-right: 8px;
+  padding-bottom: 6px;
+  border-bottom: solid 3px transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: blue;
+}
+
+.scoreboard__btn-out--active {
+  border-bottom: solid 3px #000;
+  color: #000;
+}
+
+.scoreboard__btn-arrival {
+  padding-bottom: 6px;
+  border-bottom: solid 3px transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: blue;
+}
+
+.scoreboard__btn-arrival--active {
+  border-bottom: solid 3px #000;
+  color: #000;
+}
+
+.scoreboard__table {
+  border-radius: 0px 0px 12px 12px;
+  background-color: #fff;
+}
+
+.scoreboard__table-head {
+  display: none;
+}
+
+.scoreboard__flight {
+  justify-content: space-between;
+  padding: 14px 12px 14px;
+  border-bottom: 1px solid #eff1f5;
+}
+
+.scoreboard__flight--editing:last-child {
+  border-bottom: none;
+}
+
+.scoreboard__flight-element {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13.904px;
+}
+
+.scoreboard__flight-element--date {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 9px;
+  margin-bottom: 7px;
+}
+
+.scoreboard__flight-element--time {
+  vertical-align: top;
+}
+
+.scoreboard__flight-element--wrap {
+  display: none;
+}
+
+.scoreboard__flight-element--direction {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.scoreboard__flight-element--text {
+  display: block;
+  margin-bottom: 6.05px;
+  text-align: right;
+  color: #B0B0B0;
+}
+
+.scoreboard__flight-element--status {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.scoreboard__flight--editing {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scoreboard__flight-group--right>.choices {
+  display: inline-block;
+  margin: 0;
+  margin-right: 66px;
+  width: 190px;
+}
+
+.scoreboard__flight-group--right>.choices .choices__inner {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.scoreboard__flight--editing .scoreboard__flight-group--right .scoreboard__flight-element--text {
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.scoreboard__flight-btn {
+  display: inline;
+  vertical-align: super;
+}
+
+.container--user .scoreboard__header {
+  background-color: #fff;
+}
+
+.container--user .scoreboard__header .scoreboard__title {
+  margin-bottom: 18px;
+}
+
+.container--user .scoreboard__header .scoreboard__search,
+.container--user .scoreboard__header .scoreboard__search .scoreboard__search-input {
+  background-color: #eff1f5;
+}
+
+.container--user .scoreboard__tab {
+  padding-top: 10px;
+}

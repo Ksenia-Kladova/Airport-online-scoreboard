@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн-табло аэропорта</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script type="module" src="js/script.js"></script>
+</head>
+
+<body class="body body--user">
+  <div class="scoreboard container container--user">
+    <div class="scoreboard__header flex">
+      <h1 class="scoreboard__title">Онлайн-табло</h1>
+      <div class="scoreboard__search flex">
+        <input class="scoreboard__search-input" type="search" placeholder="Поиск по направлению">
+      </div>
+    </div>
+    <div class="scoreboard__tab flex">
+      <button class="scoreboard__btn-out btn-reset" data-flag='out'>Вылет</button>
+      <button class="scoreboard__btn-arrival scoreboard__btn-arrival--active btn-reset" data-flag="arrival">Прилет</button>
+    </div>
+    <div class="scoreboard__table">
+      <ul class="scoreboard__table-head flex list-reset">
+        <li class="scoreboard__table-item">Дата</li>
+        <li class="scoreboard__table-item">Время</li>
+        <li class="scoreboard__table-item">Направление</li>
+        <li class="scoreboard__table-item">Рейс</li>
+        <li class="scoreboard__table-item scoreboard__table-item--hidden">Авиакомпания</li>
+        <li class="scoreboard__table-item">Статус</li>
+      </ul>
+      <ul class="scoreboard__table-flights list-reset" id="4"></ul>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

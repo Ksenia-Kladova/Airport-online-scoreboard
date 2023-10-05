@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн-табло аэропорта для администраторов</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/plagins/choices.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</head>
+
+<body>
+  <div class="scoreboard container">
+    <div class="scoreboard__header flex">
+      <div class="scoreboard__header-wrap flex">
+        <h1 class="scoreboard__title">Онлайн-табло</h1>
+        <button class="scoreboard__btn-editing btn-reset">редактирование</button>
+      </div>
+      <button class="scoreboard__btn-save btn-reset">Сохранить изменения</button>
+      <div class="scoreboard__search flex">
+        <input class="scoreboard__search-input" type="text" placeholder="Поиск по направлению">
+      </div>
+    </div>
+    <div class="scoreboard__wrapper-form">
+      <h2 class="scoreboard__title-form">Добавить рейс</h2>
+      <form class="scoreboard__form" id="form" action="#" autocomplete="off" aria-label="Форма для добавления рейса">
+        <div class="scoreboard__form-container flex">
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--date flex">
+            <input class="scoreboard__form-input scoreboard__form-input--date" id="date" type="text" placeholder="Дата"
+              pattern="\d{2}-\d{2}" autocomplete="off">
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--time flex">
+            <input class="scoreboard__form-input scoreboard__form-input--time" id="time" type="text" placeholder="Время"
+              pattern="\d{2}:\d{2}" autocomplete="off">
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--direction control-wrapper flex">
+            <select class="scoreboard__form-select choices" name="Направление" id="direction" tabindex="0">
+              <option value="Направление">Направление</option>
+              <option>Москва SVO</option>
+              <option>Сочи</option>
+              <option>Москва DME</option>
+              <option>Самара</option>
+              <option>Челябинск</option>
+              <option>Санкт Петербург</option>
+              <option>Казань</option>
+            </select>
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--flight flex">
+            <input class="scoreboard__form-input scoreboard__form-input--flight" id="flight" type="text"
+              placeholder="Рейс" autocomplete="off">
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--aviacompany  control-wrapper flex">
+            <select class="scoreboard__form-select choices" name="Авиакомпания" id="aviacompany">
+              <option value="Авиакомпания">Авиакомпания</option>
+              <option data-image="image/airlogo.jpg">Аэрофлот</option>
+              <option data-image="image/russialogo.jpg">Россия</option>
+              <option data-image="image/azimuthlogo.jpg">Азимут</option>
+              <option data-image="image/airlineslogo.jpg">S7 Airlines</option>
+              <option data-image="image/uralairlineslogo.jpg">Ural Airlines</option>
+              <option data-image="image/nordwind.jpg">Nordwind Airlines</option>
+            </select>
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--status control-wrapper flex">
+            <select class="scoreboard__form-select choices" name="Статус" id="status">
+              <option value="Статус">Статус</option>
+              <option data-color="red">Отменен</option>
+              <option data-color="black">Регистрация</option>
+              <option data-color="blue">В полете</option>
+              <option data-color="blue">Посадка</option>
+              <option data-color="red">Задерживается</option>
+              <option data-color="green">Прибыл</option>
+            </select>
+          </div>
+          <div class="scoreboard__form-wrapper scoreboard__form-wrapper--fromto control-wrapper flex">
+            <select class="scoreboard__form-select choices" name="Тип" id="fromTo">
+              <option value="Тип">Тип</option>
+              <option>Вылет</option>
+              <option>Прилёт</option>
+            </select>
+          </div>
+        </div>
+        <button class="scoreboard__form-btn btn-reset">Добавить</button>
+      </form>
+    </div>
+    <div class="scoreboard__tab flex">
+      <button class="scoreboard__btn-out btn-reset" data-flag='out'>Вылет</button>
+      <button class="scoreboard__btn-arrival scoreboard__btn-arrival--active btn-reset"
+        data-flag="arrival">Прилёт</button>
+    </div>
+    <div class="scoreboard__table">
+      <ul class="scoreboard__table-head flex list-reset" aria-label="Список рейсов">
+        <li class="scoreboard__table-item">Дата</li>
+        <li class="scoreboard__table-item">Время</li>
+        <li class="scoreboard__table-item">Направление</li>
+        <li class="scoreboard__table-item">Рейс</li>
+        <li class="scoreboard__table-item scoreboard__table-item--hidden">Авиакомпания</li>
+        <li class="scoreboard__table-item">Статус</li>
+      </ul>
+      <ul class="scoreboard__table-flights list-reset" id="4"></ul>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

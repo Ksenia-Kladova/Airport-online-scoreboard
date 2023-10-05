@@ -1,0 +1,425 @@
+@media (min-width: 577px) {
+  .scoreboard__table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .scoreboard__table-head {
+    display: table-header-group;
+  }
+
+  .scoreboard__table-item {
+    display: table-cell;
+    padding-top: 25px;
+    font-size: 15px;
+    line-height: 21.75px;
+    color: #00153e4d;
+  }
+
+  .scoreboard__table-item:nth-child(1) {
+    padding-left: 24px;
+  }
+
+  .scoreboard__table-item--hidden {
+    display: none;
+  }
+
+  .scoreboard__table-flights {
+    display: table-row-group;
+  }
+
+  .scoreboard__flight {
+    display: table-row;
+    padding: 0;
+  }
+
+  .scoreboard__flight:last-child {
+    border: none;
+  }
+
+  .scoreboard__flight:last-child .scoreboard__flight-element {
+    padding-bottom: 34px;
+  }
+
+  .scoreboard__flight-group {
+    display: contents;
+  }
+
+  .scoreboard__flight-element {
+    display: table-cell;
+    padding-top: 9.2px;
+    padding-bottom: 9.1px;
+    font-size: 17px;
+    line-height: 26.1px;
+  }
+
+
+  .scoreboard__flight-element--date {
+    padding-left: 10px;
+    width: 80px;
+  }
+
+  .scoreboard__flight-element--time {
+    width: 60px;
+  }
+
+  .scoreboard__flight-element--text {
+    display: none;
+  }
+
+  .scoreboard__flight-element--direction {
+    width: 160px;
+  }
+
+  .scoreboard__flight-element--flight {
+    width: 100px;
+  }
+
+  .scoreboard__flight-element--wrap {
+    display: none;
+  }
+
+  .scoreboard__flight-group--right .choices {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .scoreboard__flight-btn {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 5px;
+    width: 45px;
+    height: 40px;
+  }
+
+  .scoreboard__flight-btn svg {
+    vertical-align: middle;
+  }
+
+  .scoreboard__flight--editing .scoreboard__flight-group--left .scoreboard__flight-element--flight {
+    width: 108px;
+  }
+}
+
+@media (min-width: 727px) {
+  body {
+    padding: 60px 2.6% 60px 2.6%;
+  }
+
+  .container {
+    border-radius: 20px;
+  }
+
+  .scoreboard__header {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    padding: 59px 20px 37px 32px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .scoreboard__header-wrap {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .scoreboard__title {
+    margin: 0;
+    margin-right: 9px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .scoreboard__btn-editing {
+    margin: 0;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .scoreboard__btn-save {
+    margin: 0;
+    padding: 10px 31px;
+    max-width: 243px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .scoreboard__search {
+    padding: 19px 13px 12px 50px;
+    width: 100%;
+    background-image: url("../image/magnifying_icon_tablet.svg");
+    background-position-x: 15px;
+   
+  }
+
+  .scoreboard__search-input::placeholder {
+    font-size: 20px;
+  }
+
+  .scoreboard__search-svg {
+    width: 24px;
+    height: 23px;
+  }
+
+  .scoreboard__wrapper-form {
+    padding: 0 32px 40px 32px;
+  }
+
+  .scoreboard__title-form {
+    margin-bottom: 21px;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .scoreboard__form-container {
+    margin-bottom: 12px;
+  }
+
+  .scoreboard__form-btn {
+    padding: 10px 39px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .scoreboard__tab {
+    padding: 32px 32px 0px;
+  }
+
+  .scoreboard__btn-arrival,
+  .scoreboard__btn-out {
+    padding-bottom: 13px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .scoreboard__btn-out {
+    margin-right: 25px;
+  }
+
+  .scoreboard__table-item:nth-child(1) {
+    padding-left: 44px;
+  }
+
+  .scoreboard__flight-element--date {
+    padding-left: 32px;
+    width: 120px;
+  }
+
+  .scoreboard__flight-element--time {
+    width: 76px;
+  }
+
+
+  .scoreboard__flight-element--direction {
+    width: 170px;
+  }
+
+  .scoreboard__flight-element--flight {
+    width: 118px;
+  }
+
+
+  .container--user .scoreboard__header {
+    gap: 38px;
+  }
+
+  .container--user .scoreboard__header .scoreboard__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .container--user .scoreboard__header .scoreboard__search .scoreboard__search-btn svg {
+    width: 24px;
+    height: 23px;
+  }
+
+  .container--user .scoreboard__flight-element--date {
+    padding-left: 32px;
+    width: 137px;
+  }
+
+  .container--user .scoreboard__flight-element--time {
+    width: 92px;
+  }
+
+  .container--user .scoreboard__flight-element--direction {
+    width: 190px;
+  }
+
+  .container--user .scoreboard__table {
+    padding-bottom: 0px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .container--user .scoreboard__flight:last-child .scoreboard__flight-element {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: 991px) {
+  body {
+    padding: 60px 5% 60px 5%;
+  }
+
+  .scoreboard__form-container {
+    width: 100%;
+  }
+
+  .scoreboard__flight-element {
+    vertical-align: middle;
+  }
+
+  .scoreboard__flight-element--wrap {
+    display: table-cell;
+    padding-left: 20px;
+  }
+
+  .scoreboard__table-item--hidden {
+    display: table-cell;
+  }
+}
+
+@media (min-width: 1199px) {
+  body {
+    padding: 116px 24.4%;
+  }
+
+  .container {
+    padding-bottom: 32px;
+  }
+
+  .scoreboard__header {
+    gap: 31px;
+    padding: 56px 56px 37px 45px;
+  }
+
+  .scoreboard__title {
+    margin-right: 13px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .scoreboard__btn-editing {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .scoreboard__search {
+    padding: 12px 13px 10px 45px;
+    background-image: url("../image/magnifying_icon.svg");
+    background-position-x: 18px;
+  }
+
+  .scoreboard__search-input::placeholder {
+    font-size: 15px;
+  }
+
+  .scoreboard__search-svg {
+    width: 18px;
+    height: 17px;
+  }
+
+  .scoreboard__wrapper-form {
+    padding: 0 55px 22px 45px;
+  }
+
+  .scoreboard__form-container {
+    gap: 11px 6px;
+  }
+
+  .scoreboard__form-btn {
+    padding: 10px 22px;
+  }
+
+  .scoreboard__tab {
+    padding: 29px 45px 0px;
+  }
+
+  .scoreboard__flight-element {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .scoreboard__flight-element--date {
+    padding-left: 45px;
+    width: 15%;
+  }
+
+  .scoreboard__flight-element--time {
+    width: 13%;
+  }
+
+  .scoreboard__flight-element--direction {
+    width: 19.5%;
+  }
+
+  .scoreboard__flight-element--flight {
+    width: 11%;
+  }
+
+  .scoreboard__flight-element--wrap {
+    width: 15%;
+  }
+
+  .scoreboard__flight:last-child .scoreboard__flight-element {
+    padding-bottom: 8px;
+  }
+
+  .scoreboard__flight--editing .scoreboard__flight-group--left .scoreboard__flight-element--wrap {
+    width: 13.8%;
+  }
+
+  .body--user {
+    padding: 60px 10% 60px 10%;
+  }
+
+  .container--user {
+    padding-bottom: 11px;
+  }
+
+  .container--user .scoreboard__header {
+    gap: 35px;
+  }
+
+  .container--user .scoreboard__header .scoreboard__search .scoreboard__search-btn svg {
+    width: 18px;
+    height: 17px;
+  }
+
+  .container--user .scoreboard__tab {
+    padding-top: 0px;
+  }
+
+  .container--user .scoreboard__flight-element--date {
+    padding-left: 48px;
+    width: 19.3%;
+  }
+
+  .container--user .scoreboard__flight-element--time {
+    width: 13%;
+  }
+
+  .container--user .scoreboard__flight-element--direction {
+    width: 20.5%;
+  }
+
+  .container--user .scoreboard__flight-element--flight {
+    width: 12.5%;
+  }
+
+  .container--user .scoreboard__flight-element--wrap {
+    width: 14%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .body--user {
+    padding: 60px 23.38% 60px 25.45%;
+  }
+}
