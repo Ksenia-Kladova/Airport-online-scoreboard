@@ -6,6 +6,8 @@ import { getForm } from "./getForm.js";
 import { createItem } from "./createElement.js";
 import { renderEditing } from "./renderEditing.js"
 
+getLocal("scoreboard");
+
 const btnOut = document.querySelector('.scoreboard__btn-out');
 const btnArrival = document.querySelector('.scoreboard__btn-arrival');
 const btnEditing = document.querySelector('.scoreboard__btn-editing');

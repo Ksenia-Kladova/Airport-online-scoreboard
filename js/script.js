@@ -1,7 +1,10 @@
+
 import { newArrayFlights, getLocal } from "./localStorage.js";
 import { search } from "./search.js";
 import { render } from "./render.js";
 import { filterArrayFlights } from "./filterArrayFlights.js";
+
+getLocal("scoreboard");
 
 let flag = 'arrival';
 
