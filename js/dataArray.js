@@ -8,7 +8,7 @@ export let arrayFlights = [
       flight: "SU - 1651",
       aviacompany: {
         name: "Аэрофлот",
-        image: "../image/airlogo.jpg"
+        image: "image/airlogo.jpg"
       },
       status: {
         color: "green",
@@ -27,7 +27,7 @@ export let arrayFlights = [
       flight: "FV - 6502",
       aviacompany: {
         name: "Россия",
-        image: "../image/russialogo.jpg"
+        image: "image/russialogo.jpg"
       },
       status: {
         color: "green",
@@ -46,7 +46,7 @@ export let arrayFlights = [
       flight: "SU - 1637",
       aviacompany: {
         name: "Аэрофлот",
-        image: "../image/airlogo.jpg"
+        image: "image/airlogo.jpg"
       },
       status: {
         color: "green",
@@ -66,7 +66,7 @@ export let arrayFlights = [
       flight: "U6 - 526",
       aviacompany: {
         name: "Ural Airlines",
-        image: "../image/uralairlineslogo.jpg"
+        image: "image/uralairlineslogo.jpg"
       },
       status: {
         color: "black",
@@ -86,7 +86,7 @@ export let arrayFlights = [
       flight: "U6 - 484",
       aviacompany: {
         name: "S7 Airlines",
-        image: "../image/airlineslogo.jpg"
+        image: "image/airlineslogo.jpg"
       },
       status: {
         color: "black",
@@ -106,7 +106,7 @@ export let arrayFlights = [
       flight: "SU - 1645",
       aviacompany: {
         name: "Аэрофлот",
-        image: "../image/airlogo.jpg"
+        image: "image/airlogo.jpg"
       },
       status: {
         color: "black",
@@ -125,7 +125,7 @@ export let arrayFlights = [
       flight: "U6 - 482",
       aviacompany: {
         name: "Россия",
-        image: "../image/russialogo.jpg"
+        image: "image/russialogo.jpg"
       },
       status: {
         color: "red",
@@ -145,7 +145,7 @@ export let arrayFlights = [
       flight: "FV - 6892",
       aviacompany: {
         name: "Nordwind Airlines",
-        image: "../image/nordwind.jpg"
+        image: "image/nordwind.jpg"
       },
       status: {
         color: "blue",
@@ -165,7 +165,7 @@ export let arrayFlights = [
       flight: "N4 - 124",
       aviacompany: {
         name: "S7 Airlines",
-        image: "../image/airlineslogo.jpg"
+        image: "image/airlineslogo.jpg"
       },
       status: {
         color: "blue",
@@ -185,7 +185,7 @@ export let arrayFlights = [
       flight: "U6 - 615",
       aviacompany: {
         name: "Ural Airlines",
-        image: "../image/uralairlineslogo.jpg"
+        image: "image/uralairlineslogo.jpg"
       },
       status: {
         color: "red",
@@ -204,7 +204,7 @@ export let arrayFlights = [
       flight: "U6 - 44",
       aviacompany: {
         name: "Ural Airlines",
-        image: "../image/uralairlineslogo.jpg"
+        image: "image/uralairlineslogo.jpg"
       },
       status: {
         color: "black",
@@ -224,7 +224,7 @@ export let arrayFlights = [
       flight: "U6 - 34",
       aviacompany: {
         name: "Ural Airlines",
-        image: "../image/uralairlineslogo.jpg"
+        image: "image/uralairlineslogo.jpg"
       },
       status: {
         color: "black",
@@ -243,7 +243,7 @@ export let arrayFlights = [
       flight: "S7 - 2008",
       aviacompany: {
         name: "Азимут",
-        image: "../image/azimuthlogo.jpg"
+        image: "image/azimuthlogo.jpg"
       },
       status: {
         color: "red",
@@ -263,7 +263,7 @@ export let arrayFlights = [
       flight: "SU - 1621",
       aviacompany: {
         name: "Аэрофлот",
-        image: "../image/airlogo.jpg"
+        image: "image/airlogo.jpg"
       },
       status: {
         color: "red",
@@ -283,7 +283,7 @@ export let arrayFlights = [
       flight: "SU - 1621",
       aviacompany: {
         name: "Аэрофлот",
-        image: "../image/airlogo.jpg"
+        image: "image/airlogo.jpg"
       },
       status: {
         color: "red",
